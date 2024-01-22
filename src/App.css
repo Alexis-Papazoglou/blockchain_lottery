@@ -1,38 +1,67 @@
-.App {
-  text-align: center;
+.html , body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #0F1035;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    color: #DCF2F1;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.itemsContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+    gap: 50px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.btnContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+    gap: 80px;
+    padding-bottom: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.btn {
+    background-color: #DCF2F1;
+    color: #0F1035;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 14px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    box-shadow: #DCF2F1 0px 0px 5px 0px;
+    transition: 0.2s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn:hover {
+    background-color: #0F1035;
+    color: #DCF2F1;
+    box-shadow: #DCF2F1 0px 0px 5px 0px;
+}
+
+.winnersContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
